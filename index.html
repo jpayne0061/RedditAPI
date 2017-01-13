@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>redditor report</title>
+    <link rel="stylesheet" href="css/bootstrap-paper.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <span id="main-title">redditor report</span>
+                
+                <!--@Html.ActionLink("Redditor Report", "Reddit", "Home", new { area = "" }, new { @class = "navbar-brand" })-->
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    
+                    <li><a href="submissions.html">Submissions</a></li>
+                    <!--<li>@Html.ActionLink("Comments", "Reddit", "Home")</li>-->
+                    <!--<li>@Html.ActionLink("Submissions", "RedditLink", "Home")</li>-->
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        <!--@RenderBody()-->
+        
+        <div class='container'>
+    <div class='row'>
+        <div class="col-md-3 col-xs-12 col-sm-6">
+
+            <div id="input-left">
+                <input type="text" class="form-control" id="username-form" placeholder="enter redditor username"><span class="btn btn-primary report-button" id="butt">Get Comments Report</span>
+            </div>
+        </div>
+        <div class="col-md-8 col-xs-12 col-sm-12" id="reddit-content">
+            <div id="data-load"></div>
+            <a id="back-to-table">Back To Table</a>
+            <table class="table table-bordered" id="table">
+                <thead>
+                    <tr>
+                        <th>subreddit</th>
+                        <th>upvotes for this subreddit</th>
+                        <th>number of comments</th>
+                        <th>comments</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+
+            </table>
+
+            <table class="table table-bordered" id="comment-table">
+                <thead>
+                    <tr>
+                        <th>comment</th>
+                        <th>upvotes</th>
+
+                    </tr>
+                </thead>
+                <tbody></tbody>
+
+            </table>
+
+
+            <!--@*<div id="data-load"><div>If data doesn't load in under 15 secs, check your spelling</div> </div>*@-->
+
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-sm-3"></div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <div id="input-middle">
+                <input type="text" class="form-control" id="username-form-middle" placeholder="enter redditor username"><span class="btn btn-primary report-button" id="butt-2">Get Comments Report</span>
+            </div>
+
+        </div>
+        <div class="col-md-4 col-sm-3"></div>
+
+    </div>
+
+
+</div>
+
+    </div>
+
+    <!--@Scripts.Render("~/bundles/jquery")-->
+    <!--@Scripts.Render("~/bundles/bootstrap")-->
+    <!--@Scripts.Render("~/bundles/dt")-->
+    <!--@*<script src="~/Scripts/script.js"></script>*@-->
+    <!--@RenderSection("scripts", required: false)-->
+    
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous"></script>
+  
+
+  <script src="scripts/bootstrap.js" ></script>
+  <script src="scripts/respond.js" ></script>
+  <script src="scripts/jquery_dt.js" ></script>
+  <script src="scripts/dt_bs.js" ></script>
+  <script src="scripts/script.js" ></script>
+  
+    <!--<script type="text/javascript" src="https://cdn.datatables.net/v/bs/dt-1.10.13/datatables.min.js"></script>-->
+</body>
+</html>
